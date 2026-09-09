@@ -1,0 +1,38 @@
+#GET http://localhost:8080/p/print-name
+
+
+#POST http://localhost:8080/p/save
+#Content-Type: application/json
+#
+#{
+#  "firstName": "Ali",
+#  "age": 34
+#}
+
+#GET http://localhost:8080/inc/getPatientInc
+#GET http://localhost:8080/p/print-name?name=rania&age=34
+#GET http://localhost:8080/employees/get-emp?id=1
+#POST http://localhost:8080/employees/save-emp
+#Content-Type: application/json
+#
+#{
+#
+#  "firstName": "testEmp",
+#  "lastName": "testEmp1",
+#  "salary": 106.7
+#
+#
+#}
+#GET http://localhost:8080/employees/delete-emp?id=1
+#POST http://localhost:8080/employees/update-emp
+#Content-Type: application/json
+#
+#{
+#  "id": 1,
+#  "firstName": "testEmp",
+#  "lastName": "testEmp4",
+#  "salary": 106.7
+#
+#
+#}
+GET http://localhost:8080/employees/get-emp?id=1
