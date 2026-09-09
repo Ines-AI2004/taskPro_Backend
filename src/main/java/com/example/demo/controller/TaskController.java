@@ -6,10 +6,14 @@ import com.example.demo.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = {
-        "http://localhost:5173",
-        "https://task-managment-system-g6eh.vercel.app"
-})
+@CrossOrigin(
+        origins = {
+                "http://localhost:5173",
+                "https://task-managment-system-g6eh.vercel.app"
+        },
+        allowedHeaders = "*",
+        methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE, RequestMethod.OPTIONS}
+)
 @RestController
 @RequestMapping("/tasks")
 public class TaskController {
