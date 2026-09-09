@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin(origins = {
         "http://localhost:5173",
-        "https://task-managment-system-g6eh.vercel.app" // استبدليه برابط Vercel الحقيقي
+        "https://task-managment-system-g6eh.vercel.app" 
 })
 @RestController
 @RequestMapping("/tasks")
